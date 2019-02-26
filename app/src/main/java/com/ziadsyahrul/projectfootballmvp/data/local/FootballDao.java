@@ -23,4 +23,7 @@ public interface FootballDao {
 
     @Query("SELECT * FROM teams ORDER BY strTeam ASC")
     List<TeamsItem> selectFacorite();
+
+    @Query("SELECT * FROM teams WHERE strTeam = :name")
+    TeamsItem selectedItemSearch(String name);
 }

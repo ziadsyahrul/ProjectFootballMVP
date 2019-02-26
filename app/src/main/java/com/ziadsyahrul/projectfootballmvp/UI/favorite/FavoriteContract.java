@@ -16,5 +16,6 @@ public interface FavoriteContract {
 
     interface Presenter{
         void getDataListUser(Context context);
+        void searchTeams(Context context, String searchText);
     }
 }
